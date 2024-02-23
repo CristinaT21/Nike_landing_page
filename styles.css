@@ -6,7 +6,6 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     font-family: 'Inter', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 }
 
 /* Header styles */
@@ -14,9 +13,13 @@ header {
     background-color: rgb(240, 238, 238);
     color: rgb(0, 0, 0);
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav {
+    
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -47,9 +50,13 @@ nav a {
     font-size: 38px;
 }
 
-main {
-    padding: 20px;
-    margin-left: 100px;
+section {
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
     font-family: 'Inter', sans-serif;
 }
 .main_page{
@@ -104,6 +111,42 @@ button {
     width: 110%;
     transform: rotateZ(-43.51deg);
     position: absolute;
-    top: -250px;
+    top: -200px;
     left: -150px;
 }
+.special{
+    font-family: 'Inter', sans-serif;
+    
+}
+.special_page{
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+}
+.sneaker2{
+    width: 40%;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    /* margin-top: 70px; */
+}
+.sneaker2_img{
+    width: 553px;
+    height: 692px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.special_content{
+    width: 50%;
+}
+.special_title{
+    margin-top: 50px;
+    font-size: 75px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.special_list{
+    font-size: 38px;
+}
+/* .special_description{
+    font-size: 38px;
+} */
