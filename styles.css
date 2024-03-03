@@ -226,11 +226,12 @@ button {
     justify-content: space-between;
 }
 .like_content{
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 100%;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 5.26vw;
+    /* margin-bottom: 150px; */
+    margin-bottom: 7.9vw;
+    /* width: 100%; */
 }
 
 .like_title{
@@ -239,19 +240,30 @@ button {
     text-align: center;
 }
 .like_sneaker_content{
-    margin-top: 80px;
+    /* margin-top: 80px; */
+    margin-top: 4.21vw;
     display: flex;
     justify-content: space-between;
 
 }
+.like_sneaker{
+    width:16.84vw;
+    height: 16.84vw;
+    padding: 20px;
+}
 .like_sneaker_img{
-    width: 320px;
-    height: 320px;
+    /* width: 320px;
+    height: 320px; */
+    width:16.84vw;
+    height: 16.84vw;
 }
 .like_sneaker_title{
-    font-size: 34px;
-    margin-top: 20px;
-    margin-bottom: 100px;
+    /* font-size: 34px; */
+    font-size: 1.79vw;
+    /* margin-top: 20px; */
+    margin-top: 1.05vw;
+    /* margin-bottom: 100px; */
+    margin-bottom: 5.26vw;
 }
 /* section 5 - reviews */
 .reviews_page{
@@ -260,11 +272,13 @@ button {
     justify-content: space-between;
 }
 .reviews_content{
-    margin-right: 200px;
-    margin-left: 200px;
+    /* margin-right: 200px;
+    margin-left: 200px; */
     margin-top: 50px;
     margin-bottom: 100px;
-    width: 100%;
+    width: 90%;
+    margin: 50px auto 50px auto;
+
 }
 .reviews_title{
     /* font-size: 75px; */
@@ -275,11 +289,13 @@ button {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
-
+    padding: 20px;
 }
 .reviews_sneaker{
-    width: 320px;
-    height: 320px;
+    /* width: 320px;
+    height: 320px; */
+    width:16.84vw;
+    min-height: 16.84vw;
     background-color: #D9D9D9;
     padding: 20px;
 }
@@ -293,11 +309,28 @@ button {
     justify-content: space-between;
     font-size: 20px;
 }
-.reviews_sneaker_description{
+/* .reviews_sneaker_description{
     font-size: 24px;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 100px;
+} */
+.reviews_sneaker_description{
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+.reviews_sneaker_description:hover{
+    overflow: visible;
+    text-overflow: unset;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: unset;
 }
 .checked {
     color: black;
@@ -309,18 +342,20 @@ button {
 .bottom {
     background-color: rgb(240, 238, 238);
     text-align: center;
-    /* padding: 10px;
-    bottom: 0; */
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    
 }
 .footer_content{
-    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 50px;
     margin-right: 50px;
     margin-top: 70px;
-    margin-bottom: 70px;
-    width: 100%;
+    margin-bottom: 70px; */
+    margin: 70px auto 70px auto;
+    width: 90%;
+    
 }
 .footer_button{
     padding: 25px 90px 25px 90px;
@@ -329,8 +364,8 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 310px;
-    margin-right: 200px;
+    /* margin-left: 310px; */
+    margin-right: 0px;
     font-size: 36px;
     font-weight: 500;
 }
@@ -343,8 +378,14 @@ button {
     justify-content: center;
     margin-top: 20px;
 }
+.contact_logo_all{
+    display: flex;
+    justify-content: space-between;
+    width: 353.7px;
+    /* margin-top: 20px; */
+}
 .contact_logo{
-    margin-right: 70px;
+    /* margin-right: 70px; */
     color: black;
     font-size: 40px;
 }
@@ -482,7 +523,9 @@ button {
         width: 150%;
         transform: translate(-40%, -60%) rotateZ(-43.51deg);
     }
-
+    .story_content{
+        margin-bottom: 50px;
+    }
     /* special */
    .section_titles{
        font-size: 45px;
@@ -494,9 +537,33 @@ button {
     .sneaker3{
          margin-right: -20px;
     }
+    .sneaker3_img{margin-bottom: 0px;
+    }
     .story_title{
         font-size: 45px;
     }
+    /* like */
+    .like_sneaker_content{
+        width:100%
+    }
+    .like_content{
+        margin-left: 8vw;
+        margin-bottom: 100px;
+    }
+    .reviews_sneaker_content{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer_content{
+        flex-direction: column-reverse;
+    }
+    .footer_button{
+        margin-top: 40px;
+    }
+    .rights{
+        margin-top: 40px;
+    }
+    
 }
 @media (max-width:950px){
     /* fontul margin */
@@ -524,6 +591,19 @@ button {
         width: 37.25vw;
         height: 46.58vw;
     }
+    /* like de facut textul mai mare */
+    .like_sneaker_title{
+        font-size: 2.1vw;
+    }
+    .like_sneaker_content{
+        width: 100%;
+    }
+    /* reviews */
+    .reviews_sneaker{
+       width: 40%;
+         margin-bottom: 50px;
+    }
+
 }
 @media (max-width:740px){
     .main_description{
@@ -573,6 +653,25 @@ button {
         height: 37.5vw; */
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+    .like_sneaker_content{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    .like_sneaker{
+        width:40%;
+        height:40%;
+    }
+    .like_sneaker_img{
+        width: 100%;
+        height:100%;
+    }
+    .like_sneaker_title{
+        font-size: 20px;
     }
  
 }
@@ -645,7 +744,10 @@ button {
     .special_content{
         margin-bottom: 50px;
     }
-   
+   /* .like_sneaker_content{
+    flex-direction: column;
+
+   } */
 }
 
 /* phones */
@@ -716,6 +818,15 @@ button {
    .sneaker1_img{
        width: 100%;
        transform: translate(-40%, -60%) rotateZ(-43.51deg);
+   }
+   
+    .like_sneaker{
+        width:38%;
+        height:38%;
+    }
+   .reviews_sneaker{
+       width: 100%;
+       margin-bottom: 50px;
    }
 }
 
@@ -804,6 +915,14 @@ button {
     }
     .special_list{
         margin-left: 30px;
+        font-size: 20px;
+    }
+    /* like */
+    .like_sneaker{
+        width:100%;
+        height:100%;
+    }
+    .like_sneaker_title{
         font-size: 20px;
     }
 }
