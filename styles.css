@@ -187,7 +187,8 @@ button {
 }
 .story_content{
     width: 70%;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    margin-left: 10vw;
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -203,7 +204,20 @@ button {
 }
 .sneaker3{  
     margin-right: 90px;
-    margin-top: 190px;
+    margin-top: 0px;
+}
+.sneaker3_img{
+    /* width: 23.53vw;
+    height: 29.42vw; */
+    width: 447px;
+    height: 559px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.mobile_sneaker3{
+    display: none;
+    width: 100vw;
+    height: 100%;
 }
 /* section 4 - you might like */
 .like_page{
@@ -476,6 +490,13 @@ button {
    .special_list, .story_description{
        font-size: 22.5px;
    }
+   /* story papucu mai la margina */
+    .sneaker3{
+         margin-right: -20px;
+    }
+    .story_title{
+        font-size: 45px;
+    }
 }
 @media (max-width:950px){
     /* fontul margin */
@@ -492,6 +513,17 @@ button {
     .special_content{
         width: 55%;
     }
+    /* story description mai lat */
+    .story_description{
+        width: 100%;
+    }
+    .story_content{
+        width: 100%;
+    }
+    .sneaker3_img{
+        width: 37.25vw;
+        height: 46.58vw;
+    }
 }
 @media (max-width:740px){
     .main_description{
@@ -500,10 +532,47 @@ button {
     .special_content{
         width: 80%;
         margin-left: 50px;
+        
     }
     .section_titles,.special_title{
         text-align: center;
         /* color: white; */
+    }
+    /* story */
+    .story_page{
+        margin-left: 0px;
+    }
+    .story_content{
+        width: 80%;
+        text-align: justify;
+        margin-bottom: 50px;
+        margin-top: 0px;
+    }
+    .story_description{
+        width: 90%;
+    }
+    .story_title{
+        margin-left: -50px;
+    
+    }
+    .sneaker3{
+        display: none;
+    }
+    .mobile_sneaker3{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .mobile_sneaker3_img{
+        width: 100vw;
+        /* width: 100%; */
+        height: 100%;
+        /* width: 30vw;
+        height: 37.5vw; */
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
  
 }
@@ -558,7 +627,7 @@ button {
         flex-direction: column;
         align-items: center;
     }
-    .sneaker2{
+    .sneaker2, .sneaker3{
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;
