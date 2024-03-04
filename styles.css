@@ -17,6 +17,97 @@ header {
     width: 100%;
     z-index: 1000;
 }
+/* mascot */
+.mascot{
+    position:fixed;
+    /* right: -200px; */
+    bottom: 0px;
+  right: -200px;
+  width: 10vw;
+  height: auto;
+  z-index: 1001;
+
+  animation: bounce 1.3s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.5, 0.05, 0.5);
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+.mascot_img {
+  width: 100%;
+  height: auto;
+}
+@keyframes bounce{
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	/* 20% {
+		transform: translate3d(0, -180px, 0);
+	} */
+	100% {
+		transform: translate3d(-380px, 0, 0);
+	}
+
+}
+
+.dialog-box {
+	display: none;
+	position: absolute;
+	height: 150px;
+	width: 200px;
+	top: -40px;
+	left: -160px;
+	border-radius: 10px;
+	margin-bottom: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+  }
+
+.mascot:hover .dialog-box {
+	display: block;
+}
+  
+  .dialog-box .header {
+	height: 25px;
+	position: relative;
+	color: black;
+  }
+  
+  .background-blur {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+  }
+  
+  .left {
+	float: left;
+	text-align: left;
+	padding: 3px 0 0 10px;
+	font-size: 18px;
+  }
+  
+  .right {
+	float: right;
+	text-align: right;
+	padding: 3px 10px 0 0;
+  }
+  
+  .contents {
+	z-index: 100;
+	position: inherit;
+	font-size: 0.8em;
+  }
+  
+  .main-content {
+	padding: 8px 20px 10px 10px;
+	font-size: 20px;
+    /* text-align: right; */
+  }
+
+  .main-content strong {
+	font-weight: 700;
+  }
 .mobile_nav {
     display: none;
 }
@@ -563,6 +654,9 @@ button {
     .rights{
         margin-top: 40px;
     }
+    .mascot{
+        width: 15vw;
+    }
     
 }
 @media (max-width:950px){
@@ -602,6 +696,9 @@ button {
     .reviews_sneaker{
        width: 40%;
          margin-bottom: 50px;
+    }
+    .mascot{
+        width: 18vw;
     }
 
 }
@@ -673,7 +770,9 @@ button {
     .like_sneaker_title{
         font-size: 20px;
     }
- 
+    .mascot{
+        width: 20vw;
+    }
 }
 @media (max-width: 670px){
     .main_page{
@@ -743,6 +842,18 @@ button {
     }
     .special_content{
         margin-bottom: 50px;
+    }
+    @keyframes bounce{
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        /* 20% {
+            transform: translate3d(0, -180px, 0);
+        } */
+        100% {
+            transform: translate3d(-280px, 0, 0);
+        }
+    
     }
    /* .like_sneaker_content{
     flex-direction: column;
@@ -828,6 +939,22 @@ button {
        width: 100%;
        margin-bottom: 50px;
    }
+   .mascot{
+        bottom: calc(100% - 180px);
+        right: -200px;
+   }
+   @keyframes bounce{
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	/* 20% {
+		transform: translate3d(0, -180px, 0);
+	} */
+	100% {
+		transform: translate3d(-380px, 0, 0);
+	}
+
+}
 }
 
 @media screen and (max-width:470px){
@@ -925,4 +1052,24 @@ button {
     .like_sneaker_title{
         font-size: 20px;
     }
+    .mascot{
+        /* right: -200px; */
+        bottom: 0px;
+        right: -200px;
+        width: 30vw;
+      
+    }
+    @keyframes bounce{
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        /* 20% {
+            transform: translate3d(0, -180px, 0);
+        } */
+        100% {
+            transform: translate3d(-380px, 0, 0);
+        }
+    
+    }
+    
 }
