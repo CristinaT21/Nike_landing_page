@@ -235,10 +235,10 @@ button {
     font-family: 'Inter', sans-serif;
     
 }
-.special_page{
+.special_page_color{
     background-color: #F6F6F6;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .sneaker2{
     width: 40%;
@@ -272,7 +272,7 @@ button {
 }
 /* section 3 - story */
 .story_page{
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     justify-content: space-between;
 }
@@ -338,8 +338,8 @@ button {
 
 }
 .like_sneaker{
-    width:16.84vw;
-    height: 16.84vw;
+    width:20vw;
+    height: 22vw;
     padding: 20px;
 }
 .like_sneaker_img{
